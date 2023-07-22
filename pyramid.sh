@@ -1,15 +1,14 @@
 #!/bin/bash
-echo "enter a number"
-read n
+read -p "enter a number" n
 i=1
  while [ $i -le $n ]
  do
 j=1
  while [ $j -le $i ]
  do
-	echo "*"
+	echo -n "* "
 	j=`expr $j + 1`
 done
-echo " "
+echo 
 i=`expr $i + 1`
 done
